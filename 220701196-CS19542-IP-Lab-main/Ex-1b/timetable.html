@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Timetable</title>
+<style>
+     table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 2px solid #dee2e6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            text-align: center;
+        }
+ 
+        th {
+            background-color: #f2f2f2;
+            color: #343a40;
+        }
+ 
+        .highlight {
+            background-color: #f8f9fa;
+        }
+ 
+        .special {
+            background-color: #f0f0f0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .hidden {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 5px;
+  border-radius: 5px;
+}
+td:hover .hidden {
+  display: block;
+}
+</style>
+</head>
+<body>
+<h1><center>TIMETABLE</center></h1>
+<table>
+    <tr>
+        <th>DAY</th>
+        <th>1<br>8:00-9:00</th>
+        <th>2<br>9:00-9:50</th>
+        <th>9:50-10:10</th>
+        <th>3<br>10:10-11:00</th>
+        <th>4<br>11:00-11:50</th>
+        <th>5<br>11:50-12:30</th>
+        <th>6<br>12:30-1:20</th>
+        <th>7<br>1:20-2:10</th>
+        <th>8<br>2:10-3:00</th>
+    </tr>
+    <tr>
+        <td class="highlight"><b>TUESDAY</b></td>
+        <td colspan="2" style="position: relative;">VAP<span class="hidden">Coursecode:GE19521<br>Staff:Ms.Dharani Devi<br>Staffcode:IT191</span></td>
+        <td rowspan="6" class="special"><b>BREAK</b></td>
+        <td style="position: relative;">POAI<span class="hidden">Coursecode:A119341<br>Staff:Mr.Karthick<br>Staffcode:CS281</span></td>
+        <td style="position: relative;">IP<span class="hidden">Coursecode:CS19542<br>Staff:Ms.Jananee<br>Staffcode:CS182</span></td>
+        <td class="special">LUNCH</td>
+        <td style="position: relative;">TOC<span class="hidden">Coursecode:CS19501<br>Staff:Ms.Adlin Layola<br>Staffcode:IT210</span></td>
+        <td  colspan="2" style="position: relative;">RPA<span class="hidden">Coursecode:OA11903<br>Staff:Ms.Sasikala<br>Staffcode:CS274</span></td>
+    </tr>
+    <tr>
+        <td class="highlight"><b>WEDNESDAY</b></td>
+        <td style="position: relative;">IP<span class="hidden">Coursecode:CS19542<br>Staff:Ms.Jananee<br>Staffcode:CS182</span></td>
+        <td style="position: relative;">POAI<span class="hidden">Coursecode:A119341<br>Staff:Mr.Karthick<br>Staffcode:CS281</span></td>
+        <td style="position: relative;">LIBRARY<span class="hidden">Coursecode:LIB<br>Staff:Ms.Ariyamala<br>Staffcode:CS282</span></td>
+        <td class="special">LUNCH</td>
+        <td colspan="2">CN/POAI LAB</td>
+        <td Style="position: relative;">TOC<span class="hidden">Coursecode:CS19501<br>Staff:Ms.Adlin Layola<br>Staffcode:IT210</span></td>
+        <td style="position: relative;">CN<span class="hidden">Coursecode:CS19541<br>Staff:Mr.Senthil Pandi<br>Staffcode:CS258/CS319</span></td>
+    </tr>
+    <tr>
+        <td class="highlight"><b>THURSDAY</b></td>
+        <td style="position: relative;">CN<span class="hidden">Coursecode:CS19541<br>Staff:Mr.Senthil Pandi<br>Staffcode:CS258/CS319</span></td>
+        <td style="position: relative;">IP<span class="hidden">Coursecode:CS19542<br>Staff:Ms.Jananee<br>Staffcode:CS182</span></td>
+        <td colspan="2">IP/CN LAB</td>
+        <td class="special">LUNCH</td>
+        <td>COUN</td>
+        <td style="position: relative;">NPTEL<span class="hidden">Coursecode:NPTEL<br>Staff:Ms.Dharani Devi<br>Staffcode:IT191</span></td>
+        <td style="position: relative;">LIBRARY<span class="hidden">Coursecode:LIB<br>Staff:Ms.Ariyamala<br>Staffcode:CS282</span></td>
+    </tr>
+    <tr>
+        <td class="highlight"><b>FRIDAY</b></td>
+        <td colspan="2" style="position: relative;">RPA<span class="hidden">Coursecode:OA11903<br>Staff:Ms.Sasikala<br>Staffcode:CS274</span></td>
+        <td style="position: relative;">CN<span class="hidden">Coursecode:CS19541<br>Staff:Mr.Senthil Pandi<br>Staffcode:CS258/CS319</span></td>
+        <td style="position: relative;">IP<span class="hidden">Coursecode:CS19542<br>Staff:Ms.Jananee<br>Staffcode:CS182</span></td>
+        <td class="special">LUNCH</td>
+        <td Style="position: relative;">TOC<span class="hidden">Coursecode:CS19501<br>Staff:Ms.Adlin Layola<br>Staffcode:IT210</span></td>
+        <td colspan="2">CN/IP LAB</td>
+    </tr>
+    <tr>
+        <td class="highlight"><b>SATURDAY</b></td>
+        <td colspan="2">POAI/IP LAB</td>
+        <td style="position: relative;">POAI<span class="hidden">Coursecode:A119341<br>Staff:Mr.Karthick<br>Staffcode:CS281</span></td>
+        <td style="position: relative;">CN<span class="hidden">Coursecode:CS19541<br>Staff:Mr.Senthil Pandi<br>Staffcode:CS258/CS319</span></td>
+        <td class="special">LUNCH</td>
+        <td Style="position: relative;">TOC<span class="hidden">Coursecode:CS19501<br>Staff:Ms.Adlin Layola<br>Staffcode:IT210</span></td>
+        <td colspan="2">IP/CN LAB</td>
+    </tr>
+
+
+</body>
+</html>
+       
+  

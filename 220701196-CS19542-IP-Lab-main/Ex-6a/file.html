@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="rec">
+      <h2>Rajalakshmi Engineering College</h2>
+      <button type="submit" onclick="loadXMLDoc()">CLICK ME</button>
+    </div>
+  </body>
+  <title>AJAX</title>
+    <script>
+      function loadXMLDoc() {
+        var http = new XMLHttpRequest();
+        http.onreadystatechange = function () {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("rec").innerHTML = this.responseText;
+          }
+        };
+        http.open("GET", "rec.txt", true);
+        http.send();
+      }
+    </script>
+  </head>
+</html>
